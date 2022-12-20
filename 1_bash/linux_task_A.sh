@@ -2,9 +2,15 @@
 
 default_show_help () { echo "show help"; }
 
-show_hosts () { echo "show hosts"; }
+show_hosts () { 
+  nmap -sn -oG temp 192.168.0.0/24 >> /dev/null
+  sed -i '1d' temp
+  sed -i '$d' temp
+  cat temp
+  rm temp
+}
 
-show_open_ports () { echo "show ports"; }
+show_open_ports () { netstat -tln | grep LISTEN; }
 
 if [ $# -eq 0 ]; then
   default_show_help;
