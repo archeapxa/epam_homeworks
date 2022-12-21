@@ -8,7 +8,8 @@ default_show_help () {
 }
 
 show_hosts () { 
-  nmap -sn -oG temp 192.168.0.0/24 >> /dev/null
+  network=`ip addr show $(ip route | awk '/default/ { print $5 }') | grep "inet" | head -n 1 | awk '/inet/ {print $2}' | cut -d'/' -f1 | cut -d'.' -f1,2,3`
+  nmap -sn -oG temp ${network}.0/24 >> /dev/null
   sed -i '1d' temp
   sed -i '$d' temp
   cat temp
