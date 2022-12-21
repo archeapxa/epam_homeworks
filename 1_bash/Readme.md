@@ -20,5 +20,9 @@ Full answers from script B check [here](https://github.com/archeapxa/epam_homewo
 
 Results of script executing
 
-![image taskA](/1_bash/task_B/taskB.jpg?raw=true)
+![image taskA](/1_bash/task_C/taskC.jpg)
+
+To use as mentioned in a task, add to crontab, changing starting "_path_" to actual one:
+
+* * * * * "_path_"/linux_task_C.sh _source_ _dest_
 
