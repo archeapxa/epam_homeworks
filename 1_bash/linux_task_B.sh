@@ -38,3 +38,9 @@ echo '5. What time did site get the most requests?' >> answer_linux_task_B.txt
 
 echo 'Requests Time' >> answer_linux_task_B.txt
 cut -d' ' -f4 $1 | cut -d\/ -f3 | cut -d: -f2,3 | sort | uniq -c | sort -k 1 -n | tail -n 10 >> answer_linux_task_B.txt
+
+
+# 6. Sixth question
+echo '6. What search bots have accessed the site? (IP + UA)' >> answer_linux_task_B.txt
+
+cut -d' ' -f1,14 $1 | grep -i bot | sort | uniq | column -t >> answer_linux_task_B.txt

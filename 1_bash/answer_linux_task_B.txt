@@ -415,3 +415,18 @@ Requests Time
      13 10:02
      17 10:37
      18 11:36
+6. What search bots have accessed the site? (IP + UA)
+136.243.34.71    bingbot/2.0;
+144.76.76.115    MJ12bot/v1.4.7;
+164.132.161.40   AhrefsBot/5.2;
+164.132.161.63   AhrefsBot/5.2;
+164.132.161.85   AhrefsBot/5.2;
+207.46.13.109    bingbot/2.0;
+207.46.13.128    bingbot/2.0;
+207.46.13.3      bingbot/2.0;
+217.182.132.183  AhrefsBot/5.2;
+40.77.167.19     bingbot/2.0;
+5.255.251.28     YandexBot/3.0;
+66.249.66.194    Googlebot/2.1;
+66.249.66.199    Googlebot/2.1;
+66.249.66.204    Googlebot/2.1;
