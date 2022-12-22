@@ -50,11 +50,10 @@
 
 14. Review the 10-minute Store and Retrieve a File. Repeat, creating your own repository.
 
-![image wordpress page](/5_aws/Screenshots/13-wordpress-lightsail-page.jpg?raw=true)
+![image s3 console](/5_aws/Screenshots/14-s3.jpg?raw=true)
 
 15. Review the 10-minute example Batch upload files to the cloud to Amazon S3 using the AWS CLI. Create a user AWS IAM, configure CLI AWS and upload any files to S3.
 
-![image s3 console](/5_aws/Screenshots/14-s3.jpg?raw=true)
 ![image s3 via cli](/5_aws/Screenshots/15-s3_cli.png?raw=true)
 
 16. Review the 10-minute example Deploy Docker Containers on Amazon Elastic Container Service (Amazon ECS). Repeat, create a cluster, and run the online demo application or better other application with custom settings.
