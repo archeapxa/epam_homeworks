@@ -33,7 +33,7 @@ Client_1 та Client_2 – Віртуальні машини, на яких ро
 ![server dhcp list](/3_linux%20net/Screenshots/4-dhcp-list.JPG?raw=true)
 ![client 1 netplan](/3_linux%20net/Screenshots/5-netplan-client1.JPG?raw=true)
 ![client 1 ip addr](/3_linux%20net/Screenshots/6-client1-ip-addr.JPG?raw=true)
-![client 2 ethpo0s8](/3_linux%20net/Screenshots/7-client2-ethp0s8.JPG.JPG?raw=true)
+![client 2 ethpo0s8](/3_linux%20net/Screenshots/7-client2-ethp0s8.JPG?raw=true)
 ![client 2 ip addr](/3_linux%20net/Screenshots/8-client2-ip-addr.JPG?raw=true)
 
 #### 3. За допомогою команд ping та traceroute перевірити зв'язок між віртуальними машинами. Результат пояснити.
@@ -65,10 +65,32 @@ Client_1 та Client_2 – Віртуальні машини, на яких ро
 #### 6. Налаштувати SSH сервіс таким чином, щоб Client_1 та Client_2 могли підключатись до Server_1 та один до одного.
 
 SSH from Server_1
-![client 2 summarized](/3_linux%20net/Screenshots/16-ssh-from-server.jpg?raw=true)
+
+![server ssh](/3_linux%20net/Screenshots/16-ssh-from-server.jpg?raw=true)
 
 SSH from Client_1
-![client 2 summarized](/3_linux%20net/Screenshots/18-ssh-from-client1.jpg?raw=true)
+
+![client1 ssh](/3_linux%20net/Screenshots/18-ssh-from-client1.jpg?raw=true)
 
 SSH from Client_2
-![client 2 summarized](/3_linux%20net/Screenshots/17-ssh-from-client2.jpg?raw=true)
+
+![client 2 ssh](/3_linux%20net/Screenshots/17-ssh-from-client2.jpg?raw=true)
+
+#### 7. Налаштуйте на Server_1 firewall таким чином:
+
+![server iptables](/3_linux%20net/Screenshots/19-iptables-config.jpg?raw=true)
+
+- Дозволено підключатись через SSH з Client_1 та заборонено з Client_2
+
+![server ssh from client1](/3_linux%20net/Screenshots/19-5-ssh-client1.jpg?raw=true)
+![server ssh from client2](/3_linux%20net/Screenshots/19-6-ssh-client2.jpg?raw=true)
+
+- З Client_2 на 172.17.D+10.1 ping проходив, а на 172.17.D+20.1 не проходив
+
+![ping from client2 with iptables](/3_linux%20net/Screenshots/20-iptables-ping.jpg?raw=true)
+
+#### 8. На Server_1 налаштувати NATсервіс таким чином, щоб з Client_1 та Client_2 проходив ping в мережу Інтернет
+
+![nat config](/3_linux%20net/Screenshots/21-nat-conf.jpg?raw=true)
+![nat config ping from client1](/3_linux%20net/Screenshots/22-nat-ping-client1.jpg?raw=true)
+![nat config ping from client2](/3_linux%20net/Screenshots/23-nat-ping-client2.jpg?raw=true)
