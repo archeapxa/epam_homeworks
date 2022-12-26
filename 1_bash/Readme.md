@@ -6,7 +6,6 @@ Results of script executing
 
 ![image taskA](/1_bash/task_A/taskA.jpg?raw=true)
 
-
 ### Task 2 (B)
 
 Results of script executing
@@ -14,7 +13,6 @@ Results of script executing
 ![image taskA](/1_bash/task_B/taskB.jpg?raw=true)
 
 Full answers from script B check [here](https://github.com/archeapxa/epam_homeworks/blob/master/1_bash/task_B/answer_linux_task_B.txt).
-
 
 ### Task 3 (C)
 
@@ -24,5 +22,4 @@ Results of script executing
 
 To use as mentioned in a task, add to crontab, changing starting "_path_" to actual one:
 
-* * * * * "_path_"/linux_task_C.sh _source_ _dest_
-
+\* \* \* \* \* "_path_"/linux*task_C.sh \_source* _dest_
