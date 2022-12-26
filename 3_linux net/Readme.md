@@ -55,3 +55,20 @@ Client_1 та Client_2 – Віртуальні машини, на яких ро
 ![client1 lo interfaces](/3_linux%20net/Screenshots/12-client1-lo-netplan.jpg?raw=true)
 ![client1 lo list](/3_linux%20net/Screenshots/13-client1-lo-list.jpg?raw=true)
 ![client 2 tracert](/3_linux%20net/Screenshots/14-client2-traceroutes.jpg?raw=true)
+
+#### 5. Розрахувати спільну адресу та маску (summarizing) адрес 172.17.D+10.1 та 172.17.D+20.1, при чому префікс має бути максимально можливим. Видалити маршрути, встановлені на попередньому кроці та замінити їх об’єднаним маршрутом, якій має проходити через Server_1
+
+Спільна адреса та маска - 172.17.32.0/20 (172.17.32.0 - 172.17.47.255)
+
+![client 2 summarized](/3_linux%20net/Screenshots/15-summarized-traceroutes.jpg?raw=true)
+
+#### 6. Налаштувати SSH сервіс таким чином, щоб Client_1 та Client_2 могли підключатись до Server_1 та один до одного.
+
+SSH from Server_1
+![client 2 summarized](/3_linux%20net/Screenshots/16-ssh-from-server.jpg?raw=true)
+
+SSH from Client_1
+![client 2 summarized](/3_linux%20net/Screenshots/18-ssh-from-client1.jpg?raw=true)
+
+SSH from Client_2
+![client 2 summarized](/3_linux%20net/Screenshots/17-ssh-from-client2.jpg?raw=true)
