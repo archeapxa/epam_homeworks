@@ -1,5 +1,4 @@
-
-# Module 2 Database Administration
+## Module 2 Database Administration
 
 ### PART 1
 
@@ -46,16 +45,15 @@ DCL
 ![image 12-DCL](/2_db/Screenshots/12-DCL.jpg?raw=true)
 
 8. Create a database of new users with different privileges. Connect to the
-database as a new user and verify that the privileges allow or deny certain
-actions.
-My user didnt have privileges to use "bakery" DB
+   database as a new user and verify that the privileges allow or deny certain
+   actions.
+   My user didnt have privileges to use "bakery" DB
 
 ![image 13-user-no-privileges](/2_db/Screenshots/13-user-no-privileges.jpg?raw=true)
 
 9. Make a selection from the main table DB MySQL.
 
 ![image 14-selection-from-sql-db](/2_db/Screenshots/14-selection-from-sql-db.jpg?raw=true)
-
 
 ### PART 2
 
@@ -86,7 +84,6 @@ My user didnt have privileges to use "bakery" DB
 16.Create the dump of your database.
 
 ![image 21-remote-db-dump](/2_db/Screenshots/21-remote-db-dump.jpg?raw=true)
-
 
 ### PART 3 – MongoDB
 
