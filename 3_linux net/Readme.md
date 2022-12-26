@@ -89,7 +89,7 @@ SSH from Client_2
 
 ![ping from client2 with iptables](/3_linux%20net/Screenshots/20-iptables-ping.jpg?raw=true)
 
-#### 8. На Server_1 налаштувати NATсервіс таким чином, щоб з Client_1 та Client_2 проходив ping в мережу Інтернет
+#### 8. На Server_1 налаштувати NAT сервіс таким чином, щоб з Client_1 та Client_2 проходив ping в мережу Інтернет
 
 ![nat config](/3_linux%20net/Screenshots/21-nat-conf.jpg?raw=true)
 ![nat config ping from client1](/3_linux%20net/Screenshots/22-nat-ping-client1.jpg?raw=true)
