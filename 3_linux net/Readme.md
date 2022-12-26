@@ -16,8 +16,18 @@ Client_1 та Client_2 – Віртуальні машини, на яких ро
 
 Адреса мережі Net4 – 172.16.D.0/24.
 
-### Task solvin schema
+### Task solving schema
 
 #### Y=93, M=3, D=25 (25.03.93)
 
-![Task my schema](/3_linux%20net/Schema.jpg.jpg?raw=true)
+![Task my schema](/3_linux%20net/Schema.jpg?raw=true)
+
+#### 1. На Server_1 налаштувати статичні адреси на всіх інтерфейсах.
+
+![server netplan statics](/3_linux%20net/Screenshots/1-netplan-server.JPG?raw=true)
+![server ip addr](/3_linux%20net/Screenshots/2-server-ip-addr.JPG?raw=true)
+
+#### 2. На Server_1 налаштувати DHCP сервіс, який буде конфігурувати адреси Int1 Client_1 та Client_2
+
+![server dhcp server](/3_linux%20net/Screenshots/3-dhcp-conf.JPG?raw=true)
+![server dhcp list](/3_linux%20net/Screenshots/4-dhcp-list.JPG?raw=true)
