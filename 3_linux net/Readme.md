@@ -31,3 +31,27 @@ Client_1 та Client_2 – Віртуальні машини, на яких ро
 
 ![server dhcp server](/3_linux%20net/Screenshots/3-dhcp-conf.JPG?raw=true)
 ![server dhcp list](/3_linux%20net/Screenshots/4-dhcp-list.JPG?raw=true)
+![client 1 netplan](/3_linux%20net/Screenshots/5-netplan-client1.JPG?raw=true)
+![client 1 ip addr](/3_linux%20net/Screenshots/6-client1-ip-addr.JPG?raw=true)
+![client 2 ethpo0s8](/3_linux%20net/Screenshots/7-client2-ethp0s8.JPG.JPG?raw=true)
+![client 2 ip addr](/3_linux%20net/Screenshots/8-client2-ip-addr.JPG?raw=true)
+
+#### 3. За допомогою команд ping та traceroute перевірити зв'язок між віртуальними машинами. Результат пояснити.
+
+![server pings](/3_linux%20net/Screenshots/9-pings-server-1.JPG?raw=true)
+
+Пінг проходить до сусідніх пристроїв, але нічого не знаю про мережу за цими пристроями - не прописана маршрутизація
+
+![client 1 pings](/3_linux%20net/Screenshots/10-ping-client-1.JPG?raw=true)
+
+Пінг проходить до Client_2 через Net4 (172.16.25.x), так як пристрої мають спільну мережу, але не проходить через Net3 - Client_1 нічого про Net3 не знає та не має маршруту до неї.
+
+![client 2 pings](/3_linux%20net/Screenshots/11-ping-client-2.JPG?raw=true)
+
+Пінг проходить до Client_1 через Net4 (172.16.25.x), так як пристрої мають спільну мережу, але не проходить через Net2 - Client_2 нічого про Net2 не знає та не має маршруту до неї.
+
+#### 4. На віртуальному інтерфейсу lo Client_1 призначити дві ІР адреси за таким правилом: 172.17.D+10.1/24 та 172.17.D+20.1/24. Налаштувати маршрутизацію таким чином, щоб трафік з Client_2 до 172.17.D+10.1 проходив через Server_1, а до 172.17.D+20.1 через Net4. Для перевірки використати traceroute
+
+![client1 lo interfaces](/3_linux%20net/Screenshots/12-client1-lo-netplan.jpg?raw=true)
+![client1 lo list](/3_linux%20net/Screenshots/13-client1-lo-list.jpg?raw=true)
+![client 2 tracert](/3_linux%20net/Screenshots/14-client2-traceroutes.jpg?raw=true)
