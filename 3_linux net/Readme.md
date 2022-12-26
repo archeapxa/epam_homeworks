@@ -16,6 +16,8 @@ Client_1 та Client_2 – Віртуальні машини, на яких ро
 
 Адреса мережі Net4 – 172.16.D.0/24.
 
+Full task read [here](https://github.com/archeapxa/epam_homeworks/blob/master/3_linux%20net/Task_Linux_Net.pdf).
+
 ### Task solving schema
 
 #### Y=93, M=3, D=25 (25.03.93)
