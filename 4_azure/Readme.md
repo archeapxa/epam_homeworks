@@ -42,9 +42,17 @@ I used basic java-maven app
 
 5. Updated backend “azurerm” according to the guide - https://learn.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli
 
+![image terraform-tf](/4_azure/Screenshots/5-terraform-tf.jpg?raw=true)
+
 6. Run az login or Connect-AzAccount to connect the azure subscription from your local
 
 7. Run terraform apply to deploy infrastructure
+
+![image tf-apply](/4_azure/Screenshots/6-terraform-apply.jpg?raw=true)
+
+![image tf-result](/4_azure/Screenshots/7-tf-infra-created.jpg?raw=true)
+
+![image tf-state-azurerm](/4_azure/Screenshots/8-tfstate-saved.jpg?raw=true)
 
 #### Create a terraform pipeline
 
@@ -54,6 +62,10 @@ I used basic java-maven app
 
 3. Added 3 steps – terraform install, terraform init, terraform plan/apply. Plan is an optional one. You may add it as 4th step
 
+![image tf-pipeline](/4_azure/Screenshots/9-tf-pipeline-yml.jpg?raw=true)
+
+![image tf-pipeline-run](/4_azure/Screenshots/10-tf-pipeline-run.jpg?raw=true)
+
 ### Part 3 – Create a deploy pipeline to app service
 
 1. Add yml pipeline to the application folder
@@ -61,3 +73,9 @@ I used basic java-maven app
 2. Your pipeline structure should contain 2 stages. 1st – build, create zip archieve, and publish an artifact. 2nd – download an artifact and deploy it to azure app service
 
 3. To deploy .zip to app service use azure app service deployment task
+
+![image deploy-pipeline-code1](/4_azure/Screenshots/11-deploy-pipeline-1.jpg?raw=true)
+
+![image deploy-pipeline-code2](/4_azure/Screenshots/12-deploy-pipeline-2.jpg?raw=true)
+
+![image deploy-pipeline-run](/4_azure/Screenshots/13-deploy-pipeline-run.jpg?raw=true)
