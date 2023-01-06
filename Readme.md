@@ -1,6 +1,6 @@
 ## Homeworks repository
 
-#### Stanislav Iushkevich
+### Stanislav Iushkevich
 
 Each task has its own folder and readme:
 
